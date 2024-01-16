@@ -24,10 +24,13 @@ section{
     margin-right: 20vw;
     height: 75vh;
     box-shadow: 10px 10px 10px rgba(255, 249, 249, 0.3);
+    padding: 10vh;
 }
 
-section{
-    padding: 10vh;
+nav{
+
+    height: 10vh;
+    display: flex;
 }
 
 .btn-width{
@@ -40,4 +43,29 @@ form{
 
 .top-margin-singup{
     margin-top: 6vh;
+}
+
+.primary-section{
+    padding-top: 2vh;
+}
+
+ol{
+    list-style-type: none;
+    display: flex;
+}
+
+li {
+    margin: 2vh;
+}
+
+.section-recados{
+    background-color: wheat;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0;
+    height: 90%;
+    padding: 3vh;
+    width: 100%;
+    overflow: auto;
+    box-shadow: none;
 }
