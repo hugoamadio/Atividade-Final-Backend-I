@@ -1,10 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    border: 0;
+    border: 0;;
+}
+body{
+    background-color: black;
 }
 
 header {
+    color: rgba(255, 249, 249);
     border: 1px solid black;
     height: 15vh;
     display: flex;
@@ -13,8 +17,11 @@ header {
 }
 
 section{
+    background-color: wheat;
     border: 1px solid black;
+    border-radius: 10px;
     margin-left: 20vw;
     margin-right: 20vw;
-    height: 65vh;
+    height: 75vh;
+    box-shadow: 10px 10px 10px rgba(255, 249, 249, 0.3);
 }
