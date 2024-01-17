@@ -1,7 +1,7 @@
 let cadastro = document.getElementById("cadastrar")
 let usuariosCadastrados = []
 
-cadastro.addEventListener("click", function(){
+cadastro.addEventListener("click", function () {
     event.preventDefault();
     console.log("Botão clicado")
     let nome = document.getElementById("nome").value;
@@ -9,7 +9,7 @@ cadastro.addEventListener("click", function(){
     let senha = document.getElementById("senha").value;
     let confirmaSenha = document.getElementById("confirmaSenha").value;
 
-    if(senha != confirmaSenha){
+    if (senha != confirmaSenha) {
         alert("As senhas não são iguais!")
     } else {
         let novoUsuario = {

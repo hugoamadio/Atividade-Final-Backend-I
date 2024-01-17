@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
+
 <body>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Novo Recado</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <textarea class="form-control" id="recado" rows="5"></textarea>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar Recado</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
     <header>
         <h1>CRUD DE RECADOS</h1>
     </header>
@@ -15,28 +44,53 @@
         <section class="primary-section">
             <nav>
                 <ol>
-                    <li><a class="btn btn-primary btn-width" href="">Novo Recado</a></li>
+                    <li><button id="novoRecado" type="button" class="btn btn-primary btn-width" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Novo Recado
+                        </button></li>
                     <li><a class="btn btn-primary btn-width" href="index.html">Sair</a></li>
                 </ol>
-                
+
             </nav>
             <section class="section-recados">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam modi odit possimus reprehenderit, magni accusantium quam error officiis odio, nisi hic, totam asperiores commodi neque deleniti fuga. Distinctio, molestiae?
-                Culpa enim quibusdam expedita sed a alias iste nihil blanditiis adipisci cum tempora dolor deleniti sit doloremque ullam praesentium vel modi quos, necessitatibus tempore ab, eius tenetur veniam soluta? Saepe!
-                Quae fuga, cumque alias repellendus ea numquam eum debitis inventore autem accusamus soluta laborum suscipit reprehenderit quod neque dignissimos consequuntur quidem nihil laboriosam officia earum, unde obcaecati eligendi at. Quidem!
-                Exercitationem rem, vel excepturi eligendi dolore hic magni aut inventore nulla! Impedit minus, dolor, nisi iusto voluptatum omnis repellendus culpa beatae quos sed quis? Tempora delectus natus reiciendis eum sequi!
-                Doloribus magnam soluta aliquam culpa similique, vel voluptate cumque nisi obcaecati id odit esse, necessitatibus ducimus assumenda. Possimus tenetur, aliquam dolores, libero nostrum ut, veniam aperiam quasi maiores tempore pariatur!
-                Necessitatibus, ipsam similique repellendus reiciendis modi vitae? Repudiandae ipsa cupiditate, esse sed dolor porro magni repellendus omnis voluptates fugit deserunt nisi obcaecati, iusto molestiae ipsum quibusdam expedita, sit dolore fugiat?
-                Iste, quasi nihil, necessitatibus molestias dolor corporis blanditiis illo, excepturi quae incidunt totam officiis! Voluptatem reiciendis explicabo qui sequi odio delectus aperiam, cum nisi. Laboriosam porro sapiente deserunt saepe vitae.
-                Distinctio ducimus aut ex temporibus est suscipit ullam molestias atque, assumenda perspiciatis nulla non. Voluptas nulla perferendis illum, est ad sunt nostrum exercitationem nisi voluptate reiciendis modi ea laboriosam veritatis.
-                Officiis voluptatum, quibusdam blanditiis libero earum, nobis tempora rem possimus animi asperiores est dicta explicabo molestiae dolores rerum fugit minus dolor aliquid, temporibus soluta quod suscipit. Minima impedit reiciendis nihil.
-                Saepe ad perferendis culpa voluptatibus nisi voluptatem debitis, dolorem delectus! Quisquam odio placeat quae tempora vero molestiae repellat, ad commodi! Rerum alias ex maiores ut consequatur sint. Aliquam, numquam eligendi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam modi odit possimus reprehenderit,
+                magni accusantium quam error officiis odio, nisi hic, totam asperiores commodi neque deleniti fuga.
+                Distinctio, molestiae?
+                Culpa enim quibusdam expedita sed a alias iste nihil blanditiis adipisci cum tempora dolor deleniti sit
+                doloremque ullam praesentium vel modi quos, necessitatibus tempore ab, eius tenetur veniam soluta?
+                Saepe!
+                Quae fuga, cumque alias repellendus ea numquam eum debitis inventore autem accusamus soluta laborum
+                suscipit reprehenderit quod neque dignissimos consequuntur quidem nihil laboriosam officia earum, unde
+                obcaecati eligendi at. Quidem!
+                Exercitationem rem, vel excepturi eligendi dolore hic magni aut inventore nulla! Impedit minus, dolor,
+                nisi iusto voluptatum omnis repellendus culpa beatae quos sed quis? Tempora delectus natus reiciendis
+                eum sequi!
+                Doloribus magnam soluta aliquam culpa similique, vel voluptate cumque nisi obcaecati id odit esse,
+                necessitatibus ducimus assumenda. Possimus tenetur, aliquam dolores, libero nostrum ut, veniam aperiam
+                quasi maiores tempore pariatur!
+                Necessitatibus, ipsam similique repellendus reiciendis modi vitae? Repudiandae ipsa cupiditate, esse sed
+                dolor porro magni repellendus omnis voluptates fugit deserunt nisi obcaecati, iusto molestiae ipsum
+                quibusdam expedita, sit dolore fugiat?
+                Iste, quasi nihil, necessitatibus molestias dolor corporis blanditiis illo, excepturi quae incidunt
+                totam officiis! Voluptatem reiciendis explicabo qui sequi odio delectus aperiam, cum nisi. Laboriosam
+                porro sapiente deserunt saepe vitae.
+                Distinctio ducimus aut ex temporibus est suscipit ullam molestias atque, assumenda perspiciatis nulla
+                non. Voluptas nulla perferendis illum, est ad sunt nostrum exercitationem nisi voluptate reiciendis modi
+                ea laboriosam veritatis.
+                Officiis voluptatum, quibusdam blanditiis libero earum, nobis tempora rem possimus animi asperiores est
+                dicta explicabo molestiae dolores rerum fugit minus dolor aliquid, temporibus soluta quod suscipit.
+                Minima impedit reiciendis nihil.
+                Saepe ad perferendis culpa voluptatibus nisi voluptatem debitis, dolorem delectus! Quisquam odio placeat
+                quae tempora vero molestiae repellat, ad commodi! Rerum alias ex maiores ut consequatur sint. Aliquam,
+                numquam eligendi.
             </section>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="JS/scriptcrud.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,9 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    border: 0;;
+    border: 0;
+    ;
 }
-body{
+
+body {
     background-color: black;
 }
 
@@ -16,7 +18,7 @@ header {
     align-items: center;
 }
 
-section{
+section {
     background-color: wheat;
     border: 1px solid black;
     border-radius: 10px;
@@ -27,29 +29,29 @@ section{
     padding: 10vh;
 }
 
-nav{
+nav {
 
     height: 10vh;
     display: flex;
 }
 
-.btn-width{
+.btn-width {
     width: 10vw;
 }
 
-form{
+form {
     margin-bottom: 1vw;
 }
 
-.top-margin-singup{
+.top-margin-singup {
     margin-top: 6vh;
 }
 
-.primary-section{
+.primary-section {
     padding-top: 2vh;
 }
 
-ol{
+ol {
     list-style-type: none;
     display: flex;
 }
@@ -58,7 +60,7 @@ li {
     margin: 2vh;
 }
 
-.section-recados{
+.section-recados {
     background-color: wheat;
     border: 1px solid black;
     border-radius: 10px;
