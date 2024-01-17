@@ -30,3 +30,4 @@ novoRecadoModal.addEventListener("click", function () {
     
 
 })
+

@@ -71,3 +71,36 @@ li {
     overflow: auto;
     box-shadow: none;
 }
+
+article {
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 40%;
+    margin-bottom: 1vh;
+    display: flex;
+    position: relative;
+}
+
+.navbarrecado {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.del-recado{
+    background-color: wheat;
+    width: 1vw;
+    margin-bottom: 7vh;
+}
+
+.edit-recado{
+    background-color: wheat;
+    width: 1vw;
+}
