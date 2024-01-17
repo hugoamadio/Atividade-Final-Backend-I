@@ -1,5 +1,4 @@
 let cadastro = document.getElementById("cadastrar")
-let usuariosCadastrados = []
 
 cadastro.addEventListener("click", function () {
     event.preventDefault();
@@ -12,12 +11,23 @@ cadastro.addEventListener("click", function () {
     if (senha != confirmaSenha) {
         alert("As senhas não são iguais!")
     } else {
+        let listaArmazenamento = localStorage.getItem("listaArmazenamento")
+        if (!listaArmazenamento) { // Se não tem a listaArmazenamento criada
+            listaArmazenamento = [] // Cria a listaArmazenamento
+        } else {                    // Se não
+            listaArmazenamento = JSON.parse(listaArmazenamento) // Traz listaArmazenamento
+        }
+
         let novoUsuario = {
             nome: nome,
             email: email,
             senha: senha
         };
-        usuariosCadastrados.push(novoUsuario)
-        console.log(usuariosCadastrados);
+
+        listaArmazenamento.push(novoUsuario) // Adiciona o novo usuario ao fim da lista
+
+        let salvarUsuario = JSON.stringify(listaArmazenamento) // Transforma a listaArmazenamento em string e guarda 
+        localStorage.setItem("listaArmazenamento", salvarUsuario)
+        console.log(salvarUsuario)
     }
 })
