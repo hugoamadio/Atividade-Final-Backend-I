@@ -1,12 +1,12 @@
 let cadastro = document.getElementById("cadastrar")
 
 cadastro.addEventListener("click", function () {
-    event.preventDefault();
+    event.preventDefault()
     console.log("Botão clicado")
-    let nome = document.getElementById("nome").value;
-    let email = document.getElementById("email").value;
-    let senha = document.getElementById("senha").value;
-    let confirmaSenha = document.getElementById("confirmaSenha").value;
+    let nome = document.getElementById("nome").value
+    let email = document.getElementById("email").value
+    let senha = document.getElementById("senha").value
+    let confirmaSenha = document.getElementById("confirmaSenha").value
 
     if (senha != confirmaSenha) {
         alert("As senhas não são iguais!")
