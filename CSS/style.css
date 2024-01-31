@@ -78,7 +78,7 @@ article {
     height: 40%;
     margin-bottom: 1vh;
     display: flex;
-    position: relative;
+    padding: 2vw;
 }
 
 .navbarrecado {
